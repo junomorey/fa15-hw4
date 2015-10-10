@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   get "users/:id", to: "users#show", as: :user
   post "users", to: "users#create"
 
-  root 'dogs#index'
-  get "dogs/:id", to: "dogs#show", as :dog
+  root 'users#index'
   get "dogs/new", to: "dogs#new"
+  get "dogs/:id", to: "dogs#show", as: :dog
   post "dogs", to: "dogs#create"
 
 end
